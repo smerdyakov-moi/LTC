@@ -1,13 +1,26 @@
 /*
     Does it matter?
 */
-function addtoarray(arr,i){
-    arr.push(9);
+
+//switch statements
+
+var x=5;
+var answer="";
+switch(x){
+    case 1:
+    case 2:
+    case 3:
+        answer="numbers ranged from 1 to 3";
+        break;
+    case 4:
+    case 5:
+    case 6:
+        answer="numbers ranged from 4 to 6";
+        break;
+    default:
+        answer="unintelligible";
+        break;
 }
 
-var array = [4,5,6,7,8];
-
-
-console.log("Before:"+JSON.stringify(array));
-addtoarray(array,9);
-console.log("After :" +JSON.stringify(array));
+console.log(answer);
+console.log(5>3);
