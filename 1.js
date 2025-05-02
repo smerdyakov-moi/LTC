@@ -11,7 +11,7 @@ var object = {
     12: 'minor'
 }
 
-object.age = 20;
+object.age = 20; 
 console.log(object.age);
 //to add properties:
 object.new_property = "assigned";
@@ -22,10 +22,11 @@ delete object.new_property;
 console.log(object['sex']); //here, the 'sex' can be replaced with any other property listed in the object
 
 var obj ={
-    "apple has": "pony",
+    apple has: "pony",
     pet: "kitten",
-    age: 19
-}
+    19:'age'
+} // Unless it's a number the value of a property should be used with quotation marks
+
 
 function property_own(checkprop){
     if(obj.hasOwnProperty(checkprop)){
@@ -33,4 +34,4 @@ function property_own(checkprop){
     }else { return 'Object not found';}
 }
 
-console.log(property_own('apple has')); // the property should be in quotations, more specifically the checkprop[ONLY IF IT'S A STRING]
+console.log(property_own('goal')); // the property should be in quotations, more specifically the checkprop[ONLY IF IT'S A STRING]
