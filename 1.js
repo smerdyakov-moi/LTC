@@ -1,5 +1,13 @@
 /*
     Does it matter?
 */
+function addtoarray(arr,i){
+    arr.push(9);
+}
 
-console.log('Je mange deux croissants avec Sohesh.')
+var array = [4,5,6,7,8];
+
+
+console.log("Before:"+JSON.stringify(array));
+addtoarray(array,9);
+console.log("After :" +JSON.stringify(array));
