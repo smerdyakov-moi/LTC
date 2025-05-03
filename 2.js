@@ -67,3 +67,26 @@ arr2=arr1; //This won't make a copy. Thus, to avoid that..
 arr2=[...arr1]; // This helps make a copy, so when we edit the contents of 'arr1', the content of arr2 remains the same
 arr1[2]=19;
 console.log(arr2); 
+
+//Destructuring Argument
+const obj ={x:3,y:4,z:5}
+const {x:a,y:b,z:c} = obj; //a,b,c are const variables here . If declared with let or var, they can be altered throughout the code
+
+//Destructuring with Nested Object
+const obj1={
+    today:{min:40,max:60},
+    tomorrow:{min:30,max:40}
+}
+
+const {today:{max:max_new}} = obj1;
+console.log(max_new)
+
+//Destructuring array: commas used to skip, also be used to swap numbers: [a,b]=[b,a]
+const [f, , , g]=[1,2,3,4,5]
+console.log(f,g);
+
+//Destructuring using rest operator
+let arr_y=[1,2,3,4,5]
+let [ , , ...arr_z] =  arr_y; // This will skip the first two items
+arr_y[3]=100;
+console.log(arr_z);
