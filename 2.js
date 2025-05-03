@@ -1,14 +1,8 @@
-function multiply(array)
+//Number between a given range
+
+function randomrange(min,max)
 {
-    var product = 1;
-    for(var i=0;i<array.length;i++)
-    {
-        for(var j=0;j<array[i].length;j++)
-        {
-            product*=array[i][j];
-        }
-    }
-    return product;
+    return Math.floor(Math.random()*(max-min+1))+min;
 }
 
-console.log("Product of the numbers in the array is: "+multiply([[1,2],[3,4],[5,6,7]]));
+console.log(randomrange(4,8));
