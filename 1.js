@@ -57,16 +57,43 @@ var Music ={
 
 var copy_forcomp = JSON.parse(JSON.stringify(Music));
 
-//Function to update the music record
+/*//Function to update the music record
 function update_music(id){
     if(copy_forcomp[id]['artist']=="Pritam"){
-        copy_forcomp[id]['genre']='banned';
-        copy_forcomp[id]['artist']='banned';
-        copy_forcomp[id]['title']= 'SPEAKPATRIOTISM';
+        delete copy_forcomp[id]['artist'];
+        copy_forcomp[id]['formats'].push('sal')
     }
 }
 
 
 update_music('2');
 
-console.log(copy_forcomp);
+console.log(copy_forcomp);*/
+
+//Profile Lookup
+var arrayx =[
+    {
+        'Name':'Pragyan Khati',
+        'Age':20,
+        'Sex':'Male'
+    }
+    ,
+    {   
+        'Name': 'Aveesh Khan',
+        'Age':20,
+        'Sex': 'Undefined'
+    }
+]
+
+function lookup(name,data)
+{
+    for(var i=0;i<2;i++)
+    {
+        if(arrayx[i]['Name']===name){
+            return arrayx[i][data] || "No property";
+        }
+    }
+    return "No such name found";
+}
+
+console.log(lookup('Pragyan Khati','Ages'));
