@@ -90,3 +90,4 @@ let arr_y=[1,2,3,4,5]
 let [ , , ...arr_z] =  arr_y; // This will skip the first two items
 arr_y[3]=100;
 console.log(arr_z);
+
