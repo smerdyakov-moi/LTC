@@ -1,8 +1,4 @@
-//Number between a given range
-
-function randomrange(min,max)
-{
-    return Math.floor(Math.random()*(max-min+1))+min;
-}
-
-console.log(randomrange(4,8));
+//Ternary Operator
+var num=5-5;
+var string = num >0 ? "positive":num<0? "negative": "zero";
+console.log(string);
