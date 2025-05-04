@@ -43,24 +43,20 @@ console.log(bike.gear);
 
 //Class Syntax
 
-class Veggie{
+class Animal{
     constructor(name){
-        this.name=name //private instance
+        this.name=name;
     }
     //getter
-        get_writer(){
-            return this.name;
-        }
-     //setter
-        set_writer(new_veggie){
-            this.name=new_veggie;
-        }
+    getter (){
+        return this.name;
     }
+    setter(newname){
+        this.name=newname;
+    }
+    
+}
 
-
-const veg1 = new Veggie('carrot');
-console.log(veg1.get_writer())
-veg1.set_writer('cucumber');
-console.log(veg1.get_writer())
-
+const obj =new Animal('Lion');
+console.log(obj.getter())
 
