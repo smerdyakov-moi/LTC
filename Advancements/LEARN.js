@@ -1,4 +1,5 @@
 const fs = require('node:fs'); 
-fs.rename('2.txt','intro.txt', function(err){
-    (err)? console.error(err) : console.log("done")
-})
+const { constants } = require('node:fs');
+
+fs.readFile(".\\happy\\jsr.txt", 'utf8', function(err, data) {});
+console.log(content)
